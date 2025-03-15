@@ -1,0 +1,6 @@
+.bg-presupuesto{
+    background-image: url('/src/assets/img/fondo_presupuestoMensual.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
