@@ -6,6 +6,7 @@ export default {
           mussels: ["TT Mussels", "sans-serif"],
           compacta: ["AC Compacta", "sans-serif"],
         },
+        
       },
     },
     plugins: [],
