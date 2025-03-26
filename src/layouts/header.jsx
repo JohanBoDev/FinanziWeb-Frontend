@@ -1,59 +1,102 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Wallet, Home, Calculator, TrendingUp, PiggyBank, ClipboardList, DollarSign, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useAuth } from "@/context/AuthContext";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { isAuthenticated, logout  } = useAuth();
 
   return (
-    <header className="fixed top-0 z-50 w-full ">
-<nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 text-white">
-  
-<div className="hidden md:flex space-x-10 text-lg font-medium tracking-wide">
-  <a href="#como-usar" className="relative group text-white">
-    ¿Cómo usar?
-    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-  </a>
-  <a href="#calculadoras" className="relative group text-white">
-    Calculadoras
-    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-  </a>
-  <a href="#testimonios" className="relative group text-white">
-    Testimonios
-    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-  </a>
-</div>
+    <>
+      {/* Botón de menú en la esquina superior izquierda */}
+      <button
+        onClick={() => setMenuOpen(true)}
+        className="fixed top-5 left-5 z-50 p-2 bg-transparent text-white rounded-full hover:bg-transparent backdrop-blur-md transition hover:cursor-pointer"
+      >
+        <Menu className="w-6 h-6" />
+      </button>
 
+      {/* Sidebar Animado */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ x: "-100%" }}  // Comienza fuera de la pantalla
+            animate={{ x: 0 }}        // Entra deslizándose
+            exit={{ x: "-100%" }}      // Sale deslizándose
+            transition={{ duration: 0.3 }}
+            className="fixed top-0 left-0 h-full w-64 bg-gray-900/30 backdrop-blur-md text-white shadow-lg z-50 flex flex-col p-6"
+          >
+            {/* Botón para cerrar */}
+            <button
+              onClick={() => setMenuOpen(false)}
+              className="self-end mb-4 p-2 bg-[#FB2C36] rounded-full hover:bg-gray-600 transition"
+            >
+              <X className="w-6 h-6" />
+            </button>
 
+            {/* Links de Navegación */}
+            <nav className="space-y-4">
+              <Link to="/" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+                <Home className="w-5 h-5" />
+                Inicio
+              </Link>
+              <a href="#presupuesto-mensual" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+                <Wallet className="w-5 h-5" />
+                Presupuesto Mensual
+              </a>
+              <a href="#calculadoras" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+                <Calculator className="w-5 h-5" />
+                Calculadoras
+              </a>
+              <a href="#gestion-de-deudas" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+                <TrendingUp className="w-5 h-5" />
+                Gestión de Deudas
+              </a>
+              <a href="#metas-de-ahorro" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+                <PiggyBank className="w-5 h-5" />
+                Metas de Ahorro
+              </a>
+              <a href="#gestion-de-gastos" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+                <ClipboardList className="w-5 h-5" />
+                Gestión de Gastos
+              </a>
+              <a href="#conversor-de-moneda" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+                <DollarSign className="w-5 h-5" />
+                Conversor de Moneda
+              </a>
+            </nav>
 
-  {/* Iniciar Sesión */}
-  <div className="hidden md:flex">
-    <a href="#iniciar-sesion" className="block py-2 text-white text-center font-medium rounded-lg px-6 border border-gray-400 hover:bg-red-500 hover:text-white transition-all">
-      Iniciar Sesión
-    </a>
-  </div>
+            {isAuthenticated ? (
+              <>
+                <Link
+                  to="/dashboard"
+                  className="mt-6 block text-center p-3 border border-gray-400 rounded-lg hover:bg-gray-700/30 transition"
+                >
+                  Dashboard
+                </Link>
 
-  {/* Mobile Menu Button */}
-  <div className="md:hidden">
-    <button onClick={() => setMenuOpen(!menuOpen)} className="text-white text-2xl">
-      ☰
-    </button>
-  </div>
-
-</nav>
-
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-red-900/80 backdrop-blur-md p-6 text-white">
-          <a href="#como-usar" className="block py-2 hover:text-yellow-400">¿Cómo usar?</a>
-          <a href="#calculadoras" className="block py-2 hover:text-yellow-400">Calculadoras</a>
-          <a href="#testimonios" className="block py-2 hover:text-yellow-400">Testimonios</a>
-          <a href="#iniciar-sesion" className="block py-2 mt-4 text-white text-center font-bold rounded-lg px-4 border border-white hover:bg-white hover:text-black transition-all">
-  Iniciar Sesión
-</a>
-
-        </div>
-      )}
-    </header>
+                <button
+                  onClick={logout}
+                  className="mt-6 block text-center p-3 border border-gray-400 rounded-lg hover:bg-red-500 transition"
+                >
+                  Cerrar Sesión
+                </button>
+              </>
+            ) : (
+              <Link
+                to="/iniciar-sesion"
+                className="mt-6 block text-center p-3 border border-gray-400 rounded-lg hover:bg-red-500 transition"
+              >
+                Iniciar Sesión
+              </Link>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 

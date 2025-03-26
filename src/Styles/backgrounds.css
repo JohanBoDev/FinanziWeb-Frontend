@@ -1,0 +1,52 @@
+
+
+.bg-calculadora{
+    background-image: url('/src/assets/img/bg-calculadoras.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-ahorros{
+    background-image: url('/src/assets/img/bg-ahorros.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-gastos{
+    background-image: url('/src/assets/img/bg-gastos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.bg-conversor{
+    background-image: url('/src/assets/img/fondo_presupuestoMensual.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-gasto1{
+    background-image: url('/src/assets/img/gastos1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-gasto2{
+    background-image: url('/src/assets/img/gastos2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-gasto3{
+    background-image: url('/src/assets/img/gastos3.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
