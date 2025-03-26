@@ -49,7 +49,7 @@ const Calculadoras = () => {
                         Obtén el interés simple y compuesto sobre inversiones o préstamos.
                     </p>
                     <div className="absolute inset-0 bg-black/50 backdrop-blur-xs opacity-0 transition-opacity duration-500 hover:opacity-100 flex items-center justify-center rounded-xl">
-                        <Link to="/calculadora-deudas" className="text-white text-2xl font-bold  flex items-center gap-2">
+                        <Link to="/calculadora-intereses" className="text-white text-2xl font-bold  flex items-center gap-2">
                             Probar ahora
                             <LinkIcon className="w-6 h-6 text-white opacity-80 transition-all duration-300 hover:opacity-100 hover:scale-110" />
                         </Link>

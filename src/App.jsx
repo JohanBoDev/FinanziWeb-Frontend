@@ -5,6 +5,7 @@ import Login from "@/pages/login-y-regisro/login";
 import Registro from "@/pages/login-y-regisro/registro";
 import PageCalculadoraAhorros from "@/pages/calculadoras/page-calculadora-ahorros";
 import PageCalculadoraDeudas from "@/pages/calculadoras/page-calculadora-deudas";
+import PageCalculadoraIntereses from "./pages/calculadoras/page-calculadora-intereses";
 import useTokenExpiration from "@/hooks/useTokenExpiracion"; 
 
 
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/registrar" element={<Registro />} />
         <Route path="/calculadora-ahorros" element={<PageCalculadoraAhorros />} />
         <Route path="/calculadora-deudas" element={<PageCalculadoraDeudas />} />
+        <Route path="/calculadora-intereses" element={<PageCalculadoraIntereses />} />
       </Routes>
     </Router>
   );
