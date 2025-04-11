@@ -20,7 +20,7 @@ const PageCalculadoraInversiones = () => {
       {/* Open Graph */}
       <meta property="og:title" content="Calculadora de Inversiones - Finanzi" />
       <meta property="og:description" content="Calcula cuánto crecerá tu inversión con el tiempo. Finanzi te ayuda a tomar decisiones financieras inteligentes." />
-      <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+      <meta property="og:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
       <meta property="og:url" content="https://finanzi-liart.vercel.app/calculadora-inversiones" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Finanzi" />
@@ -29,7 +29,7 @@ const PageCalculadoraInversiones = () => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Calculadora de Inversiones - Finanzi" />
       <meta name="twitter:description" content="Descubre el valor futuro de tus inversiones y las ganancias totales esperadas con Finanzi." />
-      <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+      <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
     </Helmet><FondoDecorativo>
         <main>
           <section aria-label="Calculadora de Inversiones">

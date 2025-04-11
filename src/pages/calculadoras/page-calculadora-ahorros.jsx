@@ -18,7 +18,7 @@ const PageCalculadoraAhorros = () => {
         <link rel="canonical" href="https://finanzi-liart.vercel.app/calculadora-ahorros" />
         <meta property="og:title" content="Calculadora de Ahorros - Finanzi" />
         <meta property="og:description" content="Calculadora de Ahorros - Finanzi" />
-        <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+        <meta property="og:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
         <meta property="og:url" content="https://finanzi-liart.vercel.app/calculadora-ahorros" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Finanzi" />

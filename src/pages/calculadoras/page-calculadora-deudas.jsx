@@ -19,7 +19,7 @@ const PageCalculadoraAhorros = () => {
       {/* Open Graph (Facebook, LinkedIn, etc) */}
       <meta property="og:title" content="Calculadora de Deudas - Finanzi" />
       <meta property="og:description" content="Calcula cuánto pagarás en total y qué estrategia de pago te conviene más. Usa Finanzi para tomar mejores decisiones financieras." />
-      <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+      <meta property="og:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
       <meta property="og:url" content="https://finanzi-liart.vercel.app/calculadora-deudas" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Finanzi" />
@@ -28,7 +28,7 @@ const PageCalculadoraAhorros = () => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Calculadora de Deudas - Finanzi" />
       <meta name="twitter:description" content="Simula tus pagos mensuales y descubre cuánto interés pagarás con Finanzi." />
-      <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+      <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
     </Helmet><FondoDecorativo>
         <main>
           <section aria-label="Calculadora de Deudas">

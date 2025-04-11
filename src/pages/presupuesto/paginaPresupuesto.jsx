@@ -22,7 +22,7 @@ const PaginaPresupuesto = () => {
   {/* Open Graph */}
   <meta property="og:title" content="Presupuesto Mensual - Finanzi" />
   <meta property="og:description" content="Establece tu presupuesto, controla tus gastos y mejora tus finanzas cada mes con Finanzi." />
-  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
   <meta property="og:url" content="https://finanzi-liart.vercel.app/presupuesto" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Finanzi" />
@@ -31,7 +31,7 @@ const PaginaPresupuesto = () => {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Presupuesto Mensual - Finanzi" />
   <meta name="twitter:description" content="Gestiona tus ingresos y gastos con una herramienta simple y poderosa. ¡Haz crecer tu salud financiera con Finanzi!" />
-  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
 </Helmet>
 
       <Header />

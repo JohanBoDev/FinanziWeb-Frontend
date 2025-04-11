@@ -52,7 +52,7 @@ const Registro = () => {
   {/* Open Graph */}
   <meta property="og:title" content="Crear Cuenta - Finanzi" />
   <meta property="og:description" content="Crea tu cuenta gratuita en Finanzi y empieza a gestionar tu dinero de forma inteligente y simple." />
-  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
   <meta property="og:url" content="https://finanzi-liart.vercel.app/registrar" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Finanzi" />
@@ -61,7 +61,7 @@ const Registro = () => {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Crear Cuenta - Finanzi" />
   <meta name="twitter:description" content="Empieza a ahorrar, invertir y controlar tus finanzas con Finanzi. Regístrate en segundos." />
-  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
 </Helmet>
 
         <FondoDecorativo>

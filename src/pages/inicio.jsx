@@ -23,7 +23,7 @@ const Inicio = () => {
                 {/* Open Graph */}
                 <meta property="og:title" content="Finanzi - Tu Plataforma de Finanzas Personales" />
                 <meta property="og:description" content="Gestiona tus finanzas con Finanzi. Calculadoras financieras, presupuestos, metas de ahorro y más en una sola plataforma." />
-                <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+                <meta property="og:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
                 <meta property="og:url" content="https://finanzi-liart.vercel.app/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Finanzi" />
@@ -32,7 +32,7 @@ const Inicio = () => {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Finanzi - Tu Plataforma de Finanzas Personales" />
                 <meta name="twitter:description" content="Ahorra, invierte y controla tu dinero con Finanzi. Herramientas financieras simples y efectivas." />
-                <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+                <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
             </Helmet>
 
             <FondoDecorativo>

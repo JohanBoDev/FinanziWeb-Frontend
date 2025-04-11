@@ -39,7 +39,7 @@ const Login = () => {
   {/* Open Graph */}
   <meta property="og:title" content="Iniciar Sesión - Finanzi" />
   <meta property="og:description" content="Ingresa a tu cuenta y continúa manejando tus finanzas personales desde Finanzi." />
-  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
   <meta property="og:url" content="https://finanzi-liart.vercel.app/iniciar-sesion" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Finanzi" />
@@ -48,7 +48,7 @@ const Login = () => {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Iniciar Sesión - Finanzi" />
   <meta name="twitter:description" content="Inicia sesión en Finanzi y mantén el control de tus finanzas personales." />
-  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/og_finanzi.jpg" />
 </Helmet>
 
  <FondoDecorativo>
