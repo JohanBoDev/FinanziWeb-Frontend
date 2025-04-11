@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import useCalculadoraInversiones from "@/hooks/calculadoras/useCalculadoraInversiones";
-import Header from "@/layouts/Header";
+import Header from "@/layouts/header";
 import img from "@/assets/img/inversiones-prueba.webp";
 
 const CalculadoraInversiones = () => {
