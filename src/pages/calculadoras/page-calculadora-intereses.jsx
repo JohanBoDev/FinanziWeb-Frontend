@@ -1,7 +1,7 @@
 import CalculadoraIntereses from "@/layouts/funcionalidadCalculadoras/calculadoraIntereses";
 import AyudaCalculadoraIntereses from "@/layouts/infoCalculadoras/AyudaCalculadoraIntereses";
 import FooterFinanzi from "@/components/Footer";
-import FondoDecorativo from "../../components/fondoDecorativo";
+import FondoDecorativo from "@/components/FondoDecorativo";
 import CalculadorasNav from "../../components/CalculadorasNav";
 
 const PageCalculadoraIntereses = () => {
