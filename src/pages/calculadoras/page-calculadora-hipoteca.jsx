@@ -1,7 +1,7 @@
 import CalculadoraHipoteca from "../../layouts/funcionalidadCalculadoras/calculadoraHipoteca";
 import AyudaCalculadoraHipoteca from "../../layouts/infoCalculadoras/AyudaCalculadoraHipotecas";
 import FooterFinanzi from "@/components/Footer";
-import FondoDecorativo from "../../components/fondoDecorativo";
+import FondoDecorativo from "../../components/FondoDecorativo";
 import CalculadorasNav from "../../components/CalculadorasNav";
 
 const PageCalculadoraHipoteca = () => {
