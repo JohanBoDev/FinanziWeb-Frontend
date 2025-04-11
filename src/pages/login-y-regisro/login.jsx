@@ -6,7 +6,7 @@ import useLogin from "@/hooks/auth/useLogin";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FooterFinanzi from "@/components/Footer";
-import FondoDecorativo from "../../components/fondoDecorativo";
+import FondoDecorativo from "../../components/FondoDecorativo";
 
 
 const Login = () => {
