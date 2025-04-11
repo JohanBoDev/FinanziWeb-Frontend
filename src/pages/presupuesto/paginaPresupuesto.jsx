@@ -4,12 +4,36 @@ import AyudaPresupuesto from "@/components/presupuesto/AyudaPresupuesto";
 import ListaPresupuestos from "@/components/presupuesto/ListaPresupuestos";
 import Header from "@/layouts/header.jsx";
 import FooterFinanzi from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const PaginaPresupuesto = () => {
   const [refrescar, setRefrescar] = useState(false);
 
   return (
     <>
+    <Helmet>
+  <title>Presupuesto Mensual - Finanzi</title>
+  <meta name="description" content="Organiza tus ingresos y gastos mensuales por categorías. Controla tu dinero de forma inteligente con Finanzi." />
+  <meta name="keywords" content="presupuesto mensual, gestión financiera, ingresos, gastos, finanzas personales, Finanzi" />
+  <meta name="author" content="Finanzi" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://finanzi-liart.vercel.app/presupuesto" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Presupuesto Mensual - Finanzi" />
+  <meta property="og:description" content="Establece tu presupuesto, controla tus gastos y mejora tus finanzas cada mes con Finanzi." />
+  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta property="og:url" content="https://finanzi-liart.vercel.app/presupuesto" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Finanzi" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Presupuesto Mensual - Finanzi" />
+  <meta name="twitter:description" content="Gestiona tus ingresos y gastos con una herramienta simple y poderosa. ¡Haz crecer tu salud financiera con Finanzi!" />
+  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+</Helmet>
+
       <Header />
       <div className="relative bg-black bg-no-repeat bg-cover bg-center min-h-screen overflow-hidden">
         {/* Fondo decorativo con cuadrícula y halo */}

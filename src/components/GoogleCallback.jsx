@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/context/AuthContext";
+import { Helmet } from "react-helmet-async";
 
 
 const GoogleCallback = () => {
@@ -53,9 +54,14 @@ const GoogleCallback = () => {
 
 
   return (
-    <div className="text-center mt-20 text-gray-700">
-      Procesando inicio de sesión...
-    </div>
+    <><Helmet>
+      <title>Redirigiendo... - Finanzi</title>
+      <meta name="description" content="Estamos validando tu inicio de sesión con Google. Serás redirigido a Finanzi en unos segundos." />
+      <meta name="robots" content="noindex, nofollow" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Helmet><div className="text-center mt-20 text-gray-700">
+        Procesando inicio de sesión...
+      </div></>
   );
 };
 

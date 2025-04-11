@@ -8,6 +8,7 @@ import useRegister from "@/hooks/auth/useRegistro";
 import { useAuth } from "@/context/AuthContext";
 import FooterFinanzi from "@/components/Footer";
 import FondoDecorativo from "@/components/FondoDecorativo";
+import { Helmet } from "react-helmet-async";
 
 
 const Registro = () => {
@@ -40,6 +41,29 @@ const Registro = () => {
         }
     };
     return ( <>
+    <Helmet>
+  <title>Crear Cuenta - Finanzi</title>
+  <meta name="description" content="Regístrate en Finanzi y empieza a tomar el control de tus finanzas personales. Ahorros, inversiones, presupuestos y más en un solo lugar." />
+  <meta name="keywords" content="registrarse, crear cuenta, registro Finanzi, finanzas personales, plataforma financiera" />
+  <meta name="author" content="Finanzi" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://finanzi-liart.vercel.app/registrar" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Crear Cuenta - Finanzi" />
+  <meta property="og:description" content="Crea tu cuenta gratuita en Finanzi y empieza a gestionar tu dinero de forma inteligente y simple." />
+  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta property="og:url" content="https://finanzi-liart.vercel.app/registrar" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Finanzi" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Crear Cuenta - Finanzi" />
+  <meta name="twitter:description" content="Empieza a ahorrar, invertir y controlar tus finanzas con Finanzi. Regístrate en segundos." />
+  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+</Helmet>
+
         <FondoDecorativo>
             <Header />
 

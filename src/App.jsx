@@ -19,6 +19,7 @@ import useTokenExpiration from "@/hooks/useTokenExpiracion";
 import RutaProtegida from "@/components/RutaProtegida";
 import GoogleCallback from "@/components/GoogleCallback";
 
+
 const App = () => {
   useTokenExpiration(); // ✅ Verifica si el token expiró al cargar la app
 

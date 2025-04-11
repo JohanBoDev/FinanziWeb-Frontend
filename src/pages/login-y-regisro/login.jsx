@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FooterFinanzi from "@/components/Footer";
 import FondoDecorativo from "../../components/FondoDecorativo";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -27,6 +28,29 @@ const Login = () => {
     }
     return (
 <>
+<Helmet>
+  <title>Iniciar Sesión - Finanzi</title>
+  <meta name="description" content="Accede a tu cuenta Finanzi para gestionar ahorros, deudas, inversiones y más. Tu control financiero empieza aquí." />
+  <meta name="keywords" content="iniciar sesión, login, acceso, cuenta Finanzi, finanzas personales" />
+  <meta name="author" content="Finanzi" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://finanzi-liart.vercel.app/iniciar-sesion" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Iniciar Sesión - Finanzi" />
+  <meta property="og:description" content="Ingresa a tu cuenta y continúa manejando tus finanzas personales desde Finanzi." />
+  <meta property="og:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+  <meta property="og:url" content="https://finanzi-liart.vercel.app/iniciar-sesion" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Finanzi" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Iniciar Sesión - Finanzi" />
+  <meta name="twitter:description" content="Inicia sesión en Finanzi y mantén el control de tus finanzas personales." />
+  <meta name="twitter:image" content="https://finanzi-liart.vercel.app/img/logoFinanzi.png" />
+</Helmet>
+
  <FondoDecorativo>
   <Header />
 
