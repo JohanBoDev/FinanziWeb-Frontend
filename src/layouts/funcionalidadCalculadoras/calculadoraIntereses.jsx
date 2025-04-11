@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import  useCalculadoraIntereses  from "@/hooks/calculadoras/useCalculadoraIntereses";
-import Header from "@/layouts/Header";
+import Header from "@/layouts/header";
 import img from "@/assets/img/intereses-prueba.webp";
 
 const CalculadoraIntereses = () => {
