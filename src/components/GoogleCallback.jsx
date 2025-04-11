@@ -60,7 +60,7 @@ const GoogleCallback = () => {
       <meta name="robots" content="noindex, nofollow" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Helmet><div className="text-center mt-20 text-gray-700">
-        Procesando inicio de sesión...
+        Procesando inicio de sesión....
       </div></>
   );
 };
