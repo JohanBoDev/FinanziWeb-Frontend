@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import useRegister from "@/hooks/auth/useRegistro";
 import { useAuth } from "@/context/AuthContext";
 import FooterFinanzi from "@/components/Footer";
-import FondoDecorativo from "@/components/fondoDecorativo";
+import FondoDecorativo from "@/components/FondoDecorativo";
 
 
 const Registro = () => {
