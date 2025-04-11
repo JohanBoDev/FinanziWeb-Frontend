@@ -6,7 +6,7 @@ import MetasAhorro from "@/pages/informacion/info-metas-ahorro";
 import Gastos from "@/pages/informacion/info-gastos";
 import Conversor from "@/pages/conversorMoneda";
 import FooterFinanzi from "../components/Footer";
-import FondoDecorativo from "../components/fondoDecorativo";
+import FondoDecorativo from "../components/FondoDecorativo";
 
 const Inicio = () => {
     return (
