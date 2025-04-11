@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FormularioPresupuesto from "@/components/presupuesto/FormularioPresupuesto";
-import AyudaPresupuesto from "@/components/presupuesto/ayudaPresupuesto";
+import AyudaPresupuesto from "@/components/presupuesto/AyudaPresupuesto";
 import ListaPresupuestos from "@/components/presupuesto/ListaPresupuestos";
 import Header from "@/layouts/header.jsx";
 import FooterFinanzi from "@/components/Footer";
