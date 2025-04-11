@@ -1,4 +1,3 @@
-import '@/styles/backgrounds.css'
 import Ahorros from '@/assets/img/ahorros.webp'
 import {BentoGridSecondDemo} from '@/components/bento-ahorros'
 
