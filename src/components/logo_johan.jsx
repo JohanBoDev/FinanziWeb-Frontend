@@ -1,4 +1,4 @@
-import logo_johan from '../assets/img/logo_johan.png';
+import logo_johan from '../assets/img/logo_johan.webp';
 
 
 const LogoJohan = () => {

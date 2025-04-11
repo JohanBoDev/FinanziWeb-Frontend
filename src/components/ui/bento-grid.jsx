@@ -1,19 +1,18 @@
 import { cn } from "@/lib/utils";
 
-export const BentoGrid = ({
-  className,
-  children
-}) => {
+export const BentoGrid = ({ className, children }) => {
   return (
-    (<div
+    <div
       className={cn(
-        "grid  grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl w-full px-4 md:px-8 mx-auto",
         className
-      )}>
+      )}
+    >
       {children}
-    </div>)
+    </div>
   );
 };
+
 
 export const BentoGridItem = ({
   className,
@@ -21,29 +20,35 @@ export const BentoGridItem = ({
   description,
   header,
   icon,
-action
+  action
 }) => {
   return (
-<div
-  className={cn(
-    "rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black/40 dark:border-white/[0.2] bg-white border border-transparent flex flex-col space-y-4 items-start h-[250px]",
-    className
-  )}
->
-  {header}
-  <div className="group-hover/bento:translate-x-2 transition duration-200">
-    {icon}
-    <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-      {title}
-    </div>
-    <div className="font-sans font-normal text-neutral-600 text-lg dark:text-neutral-300">
-      {description}
-    </div>
-    {action && (
-        <div className="mt-2  w-full">{action}</div>
-  )}
-  </div>
-</div>
+    <div
+      className={cn(
+        "rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 bg-white dark:bg-black/40 border border-transparent dark:border-white/20 flex flex-col items-center justify-center sm:items-start sm:justify-between space-y-4 h-auto min-h-[240px] sm:min-h-[260px] text-center sm:text-left",
+        className
+      )}
+    >
+      {header}
 
+      <div className="group-hover/bento:translate-x-1 transition duration-200 w-full flex flex-col items-center sm:items-start">
+        {icon && <div className="mb-2">{icon}</div>}
+
+        <div className="text-lg sm:text-xl font-bold text-neutral-600 dark:text-neutral-200 mb-1">
+          {title}
+        </div>
+
+        <div className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300">
+          {description}
+        </div>
+
+        {action && (
+          <div className="mt-3 w-full flex justify-center sm:justify-start">
+            {action}
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
+

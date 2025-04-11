@@ -10,7 +10,7 @@ export const DebtManagementSection = () => {
         initial="initial"
         animate="animate"
         transition={{ staggerChildren: 0.1 }}
-        className="mx-auto grid max-w-6xl grid-cols-6 grid-rows-5 gap-4"
+        className="mx-auto xl:max-w-6xl grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-6 auto-rows-auto gap-4"
       >
         <DebtCalculationBlock />
         <AvalancheMethodBlock />
@@ -41,62 +41,68 @@ const Block = ({ className, children }) => {
 };
 
 const DebtCalculationBlock = () => (
-  <Block className="col-span-2 row-span-3">
-    <div className="flex items-center gap-2 flex-col">
-      <Calculator className="w-10 h-10" />
-      <h2 className="text-lg font-semibold">Cálculo de Deudas</h2>
-      <p className="mt-3 text-lg text-gray-300">
-      Los pagos de una deuda dependen del monto del préstamo, la tasa de interés anual y el plazo de pago. Una estrategia adecuada puede minimizar su impacto financiero.
-    </p>
+  <Block className="xl:col-span-2 xl:row-span-3">
+    <div className="flex items-center gap-2 flex-col text-center xl:text-left xl:items-start">      <Calculator className="w-10 h-10" />
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-center xl:text-left">
+        Cálculo de Deudas</h2>
+      <p className="text-sm sm:text-base md:text-lg text-gray-300 text-center xl:text-left mt-3">
+
+        Los pagos de una deuda dependen del monto del préstamo, la tasa de interés anual y el plazo de pago. Una estrategia adecuada puede minimizar su impacto financiero.
+      </p>
     </div>
 
   </Block>
 );
 
 const AvalancheMethodBlock = () => (
-  <Block className="col-span-2 row-span-3 col-start-3">
-    <div className="flex items-center gap-2 flex-col">
+  <Block className="xl:col-span-2 xl:row-span-3 xl:col-start-3">
+    <div className="flex items-center gap-2 flex-col text-center xl:text-left xl:items-start">
       <BarChart className="w-10 h-10" />
-      <h2 className="text-lg font-semibold">Método Avalancha</h2>  <p className="mt-3 text-lg text-gray-300">
-      Este método prioriza el pago de la deuda con mayor tasa de interés, reduciendo el costo total a largo plazo y acelerando la liquidación financiera.
-    </p>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-center xl:text-left">
+        Método Avalancha</h2> <p className="text-sm sm:text-base md:text-lg text-gray-300 text-center xl:text-left mt-3">
+
+        Este método prioriza el pago de la deuda con mayor tasa de interés, reduciendo el costo total a largo plazo y acelerando la liquidación financiera.
+      </p>
     </div>
-  
+
   </Block>
 );
 
 const SnowballMethodBlock = () => (
-  <Block className="col-span-2 row-span-3 col-start-5">
-    <div className="flex items-center gap-2 flex-col">
+  <Block className="xl:col-span-2 xl:row-span-3 xl:col-start-5">
+    <div className="flex items-center gap-2 flex-col text-center xl:text-left xl:items-start">
       <LineChart className="w-10 h-10" />
-      <h2 className="text-lg font-semibold">Método Bola de Nieve</h2>    <p className="text-lg text-gray-300">
-      Se centra en pagar primero las deudas más pequeñas, generando motivación y un sentido de progreso. Ideal para crear disciplina financiera.
-    </p>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-center xl:text-left">
+        Método Bola de Nieve</h2>    <p className="text-sm sm:text-base md:text-lg text-gray-300 text-center xl:text-left mt-3">
+
+        Se centra en pagar primero las deudas más pequeñas, generando motivación y un sentido de progreso. Ideal para crear disciplina financiera.
+      </p>
     </div>
 
   </Block>
 );
 
 const BenefitsBlock = () => (
-  <Block className="col-span-4 row-span-3 row-start-4">
-    <div className="flex items-center gap-2 flex-col">
+  <Block className="xl:col-span-4 xl:row-span-3 xl:row-start-4">
+    <div className="flex items-center gap-2 flex-col text-center xl:text-left xl:items-start">
       <CheckCircle className="w-10 h-10 text-white" />
-      <h2 className="text-lg font-semibold">Beneficios de un Plan de Pago</h2>
-         <p className="text-xl text-gray-300">
-      La planificación financiera ayuda a reducir el estrés, mejorar el historial crediticio y optimizar los ingresos, garantizando estabilidad a largo plazo.
-    </p>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-center xl:text-left">
+        Beneficios de un Plan de Pago</h2>
+      <p className="text-sm sm:text-base md:text-lg text-gray-300 text-center xl:text-left mt-3">
+        La planificación financiera ayuda a reducir el estrés, mejorar el historial crediticio y optimizar los ingresos, garantizando estabilidad a largo plazo.
+      </p>
     </div>
- 
+
   </Block>
 );
 
 const ActionBlock = () => (
-  <Block className="col-span-2 row-span-3 col-start-5 row-start-4 flex items-center justify-center">
-    <div className="text-center">
-      <h2 className="text-lg font-semibold text-gray-300">
+  <Block className="xl:col-span-2 xl:row-span-3 xl:col-start-5 xl:row-start-4 flex items-center justify-center">
+    <div className="flex items-center gap-2 flex-col text-center xl:text-left xl:items-start">
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-center xl:text-left">
         ¿Listo para optimizar tus pagos?
       </h2>
-      <p className="mt-2 text-sm text-white">
+      <p className="text-sm sm:text-base md:text-lg text-gray-300 text-center xl:text-left mt-3">
         Descubre cuál método se adapta mejor a ti y comienza a reducir tus deudas ahora.
       </p>
       <a

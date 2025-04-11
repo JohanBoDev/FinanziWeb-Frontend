@@ -43,11 +43,11 @@ const Header = () => {
                 <Home className="w-5 h-5" />
                 Inicio
               </Link>
-              <a href="#presupuesto-mensual" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+              <Link to="/presupuesto" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
                 <Wallet className="w-5 h-5" />
                 Presupuesto Mensual
-              </a>
-              <a href="#calculadoras" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+              </Link>
+              <a href="/#calculadoras" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
                 <Calculator className="w-5 h-5" />
                 Calculadoras
               </a>
@@ -63,7 +63,7 @@ const Header = () => {
                 <ClipboardList className="w-5 h-5" />
                 Gestión de Gastos
               </a>
-              <a href="#conversor-de-moneda" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
+              <a href="/#conversor-de-moneda" className="flex items-center gap-3 p-3 hover:bg-[#FB2C36]/70 rounded-md transition">
                 <DollarSign className="w-5 h-5" />
                 Conversor de Moneda
               </a>
